@@ -26891,8 +26891,8 @@ module.exports = anime;
 						}
 					}
 				} else {
-					if (_currentDrawBuffers.length !== 1 || _currentDrawBuffers[0] !== _gl.NONE) {
-						_currentDrawBuffers[0] = _gl.NONE;
+					if (_currentDrawBuffers.length !== 1 || _currentDrawBuffers[0] !== _gl.COLOR_ATTACHMENT0) {
+						_currentDrawBuffers[0] = _gl.COLOR_ATTACHMENT0;
 						_currentDrawBuffers.length = 1;
 						needsUpdate = true;
 					}
